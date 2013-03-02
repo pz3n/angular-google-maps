@@ -3,7 +3,7 @@
 <html ng-app="google-maps-demo" lang="en">
 
 <head>
-	<meta charset="UTF-8"> 
+  <meta charset="UTF-8"> 
 		
 	<meta name="keywords" content="angular.js,google maps,javascript,plugin">
 	<meta name="description" content="Add Google Maps support to your Angular.js application">
@@ -36,79 +36,16 @@
 		<div class="navbar">
 	    	<div class="navbar-inner">
 	    		
-	    			<a class="brand" href="#">nlaplante/angular-google-maps</a>
-	    			
+	    			<a class="brand" href="#">nlaplante/angular-google-maps</a>   			
 	    			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					
-					<div class="nav-collapse">
-	    				<ul class="nav">
-	    					<li ng-class="getNavClass('usage')"><a data-target="#" ng-click="activeTab = 'usage'">Usage</a></li>
-	    					<li ng-class="getNavClass('api')"><a data-target="#" ng-click="activeTab = 'api'">API</a></li>	    					
-	    					<li ng-class="getNavClass('demo')"><a data-target="#" ng-click="activeTab = 'demo'">Try it</a></li>
-	    					<li><a href="https://github.com/nlaplante/angular-google-maps" rel="external">View on GitHub</a></li>
-	    				</ul>
-	    			</div>
 	    		
 	    	</div>
 	    </div>
-		
-		<div class="hero-unit">
-			<h1>Google Maps for Angular.js</h1>
-			
-			<p>Simple to use <a href="http://angularjs.org/" rel="external">Angular.js</a> directive to work with Google Maps inside your applications.</p>
-			
-			<hr>
-			
-			<div class="pull-left">
-				<a class="call-to-action btn-large btn-primary" href="https://raw.github.com/nlaplante/angular-google-maps/master/src/angular-google-maps.js" rel="external" category="Actions">Download</a>
-				<a class="call-to-action btn-large" href="https://github.com/nlaplante/angular-google-maps" rel="external" category="Actions">View on GitHub</a>
-			
-				or	
-			
-				<a data-target="#" ng-click="activeTab = 'demo'">try it now!</a>
-			</div>			
-			
-			<div class="pull-right">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Just found about #angular-google-maps. Check it out!" data-url="http://nlaplante.github.com/angular-google-maps/" data-count="none" data-size="large">Tweet</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-							
-				<div class="g-plusone"></div>
-				<script type="text/javascript">
-				  (function() {
-				    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-				    po.src = 'https://apis.google.com/js/plusone.js';
-				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-				  })();
-				</script>
-				
-							
-			</div>
-		</div>
-		
-		<p>Google offers a <a href="https://developers.google.com/maps/documentation/javascript/reference" rel="external">very nice API</a> to work with maps inside your web pages. However, it requires quite a bit of
-		Javascript code to make it work and sooner or later the code becomes a big mess.</p>
 
-		<p>Google also offers a very nice MVC framework called <a href="http://angularjs.org/" rel="external">Angular.js</a> that is a real pleasure to work with. Since
-		Angular.js doesn't ship with Google Maps support built-in, I decided to make a directive for it which you can include in
-		your projects. It allows you to work with Google Maps with a really simple <code>&lt;google-map&gt;</code> element.</p>
-		
-		<h3>Already using it?</h3>
-		
-		<p>If you find any bug in the product, or would like a feature implemented, use the 
-		<a href="https://github.com/nlaplante/angular-google-maps/issues" rel="external">issue tracker</a> over
-		at the GitHub repository.</p>
-		
-		<h3>Using <a href="http://leaflet.cloudmade.com/" rel="external">Leaflet</a> instead?</h3>
-		
-		<p>Another good directive, very similar to this one, has been developed by 
-		<a href="https://github.com/tombatossals" rel="external">tombatossals</a> called 
-		<a href="http://tombatossals.github.com/angular-leaflet-directive/" rel="external">Angular Leaflet Directive</a>.
-		Check it out!</p>
-		
 		<div class="tabbable" ng-model="activeTab">
 			
 			<div class="tab-pane" title="Usage" value="usage">
@@ -324,10 +261,7 @@
 		
 	</div>
 	
-	<a id="forkme" href="https://github.com/nlaplante/angular-google-maps" rel="external">
-		<img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1040" 
-			src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
-	</a>
+
 	
 	<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?language=en&sensor=false"></script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
