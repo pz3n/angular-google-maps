@@ -59,15 +59,15 @@
 								</thead>
 								<tbody>
 									<tr ng-repeat="marker in markers">
-										<td><input value ="{{ marker.latitude }}" name="s"</td>
-										<td><input value ="{{ marker.longitude }}" required</td>
+										<td><input value ="{{ marker.latitude }}" name="markerLat" required</td>
+										<td><input value ="{{ marker.longitude }}" name="markerLng" required</td>
 										<td></td>
 									</tr>
 								</tbody>
 								<tfoot>
 									<tr>
-										<td><input value="{{ marker.latitude }}" type="number"  ng-model="markerLat" name="markerLat" required></td>
-										<td><input value="{{ marker.longitude }}" type="number"  ng-model="markerLng" name="markerLng" required></td>
+										<td><input value="{{ marker.latitude }}" type="number"  ng-model="markerLat" name="mL" required></td>
+										<td><input value="{{ marker.longitude }}" type="number"  ng-model="markerLng" name="mg" required></td>
 										<td><button class="btn" ng-click="addMarker()" 
 											ng-disabled="angularGoogleMapsForm.markerLat.$invalid || angularGoogleMapsForm.markerLng.$invalid">Add <i class="icon icon-plus-sign"></i></button></td>
 									</tr>
