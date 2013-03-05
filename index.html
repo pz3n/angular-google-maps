@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8"> 
-		
+  	
 	<meta name="keywords" content="angular.js,google maps,javascript,plugin">
 	<meta name="description" content="Add Google Maps support to your Angular.js application">
 	<meta name="google-site-verification" content="QFEOB2Fyq66-Wrfr98ihD_A6eGryMzQPXV9fSSVpRZA">
@@ -35,58 +35,16 @@
 	<div class="container">
 		
 
-		<div class="tabbable" ng-model="activeTab">
+		
 			
 			<div class="tab-pane" title="Try it" value="demo">
 
-				<h2 id="demo">Try it</h2>
+				<h2 id="demo">Plot a Route!</h2>
 				
 				<div class="row-fluid">
 					<form class="form-horizontal" name="angularGoogleMapsForm" novalidate>
 						<div class="span5">				
-							<fieldset>						
-								
-								<p>The coordinates and zoom level are adjusted automatically as you wiggle the map around:</p>
-								
-								<legend>Coordinates:</legend>
-								<div class="control-group">
-									<label class="control-label">Latitude:</label>
-									<div class="controls">
-										<input type="number" ng-model="center.lat">
-									</div>
-								</div>
-								
-								<div class="control-group">
-									<label class="control-label">Longitude:</label>
-									<div class="controls">
-										<input type="number" ng-model="center.lng">
-									</div>
-								</div>
-								
-								<div class="control-group" ng-hidden="!geolocationAvailable">
-									<label></label>
-									<div class="controls">
-										<a class="btn" ng-click="findMe()">
-											<i class="icon-screenshot"></i>
-											Find me
-										</a>
-									</div>
-								</div>
-								
-								<div class="control-group" ng-hide="!latitude || !longitude">
-									<label class="control-label">Clicked marker position:</label>
-									<div class="controls">
-										{{ latitude }}, {{ longitude }}
-									</div>
-								</div>						
-								
-								<div class="control-group">
-									<label class="control-label">Zoom level:</label>
-									<div class="controls">
-										<input type="number" ng-model="zoom" class="input-mini">
-									</div>
-								</div>
-							</fieldset>
+							
 							
 							<fieldset>
 							<legend><ng-pluralize count="markers.length" when="{'0': 'Add a marker', '1': '1 marker', 'other': '{} markers'}"></legend>
@@ -129,7 +87,7 @@
 				</div>
 					
 			</div>
-		</div>
+		
 		
 		<footer>
 			<div class="row">
