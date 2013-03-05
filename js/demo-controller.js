@@ -7,7 +7,7 @@
 	});
 	
 	module.run(function ($rootScope, $location) {
-		$rootScope.activeTab = 'demo';
+		$rootScope.activeTab = 'upload-route';
 		$location.path("demo");
 	});
 	
