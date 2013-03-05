@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8"> 
     
-  <meta name="keywords" content="angular.js,google maps,javascript,plugin">
+	<meta name="keywords" content="angular.js,google maps,javascript,plugin">
 	<meta name="description" content="Add Google Maps support to your Angular.js application">
 	<meta name="google-site-verification" content="QFEOB2Fyq66-Wrfr98ihD_A6eGryMzQPXV9fSSVpRZA">
 
@@ -69,7 +69,7 @@
 										<td><input type="number" class="input-small" ng-model="markerLat" name="markerLat" required></td>
 										<td><input type="number" class="input-small" ng-model="markerLng" name="markerLng" required></td>
 										<td><button class="btn" ng-click="addMarker()" 
-											ng-disabled="angularGoogleMapsForm.marker.latitude || angularGoogleMapsForm.marker.longtitude.$invalid">Add <i class="icon icon-plus-sign"></i></button></td>
+											ng-disabled="angularGoogleMapsForm.markerLat.$invalid || angularGoogleMapsForm.markerLng.$invalid">Add <i class="icon icon-plus-sign"></i></button></td>
 									</tr>
 								</tfoot>
 							</table>
