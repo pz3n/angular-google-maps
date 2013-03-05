@@ -7,8 +7,8 @@
 	});
 	
 	module.run(function ($rootScope, $location) {
-		$rootScope.activeTab = 'usage';
-		$location.path("usage");
+		$rootScope.activeTab = 'demo';
+		$location.path("demo");
 	});
 	
 	module.directive("callToAction", function () {
