@@ -61,16 +61,17 @@
 									<tr ng-repeat="marker in markers">
 										<td>{{ marker.latitude }}</td>
 										<td>{{ marker.longitude }}</td>
-										<td></td>
+										<td><input value= {{ marker.latitude }}></td>
+                    <td><input value= "{{ marker.latitude }}"></td>
+                    
+                    <td></td>
 									</tr>
 								</tbody>
 								<tfoot>
 									<tr>
 										<td><input value="{{ marker.latitude }}" type="number" class="input-small" ng-model="markerLat" name="markerLat" required></td>
 										<td><input value="{{ marker.longitude }}" type="number" class="input-small" ng-model="markerLng" name="markerLng" required></td>
-										</br>
-                    <br>
-                    <td><input value= {{ marker.latitude }}></td>
+										<td><input value= {{ marker.latitude }}></td>
                     <td><input value= "{{ marker.latitude }}"></td>
                     <td><input value= marker.latitude></td>
                     <td><button class="btn" ng-click="addMarker()" 
