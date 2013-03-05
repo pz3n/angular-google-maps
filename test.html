@@ -66,10 +66,10 @@
 								</tbody>
 								<tfoot>
 									<tr>
-										<td><input value={{ marker.latitude }} type="number" class="input-small" ng-model="markerLat" name="markerLat" required></td>
-										<td><input value= "marker.longitude" type="number" class="input-small" ng-model="markerLng" name="markerLng" required></td>
+										<td><input type="number" class="input-small" ng-model="markerLat" name="markerLat" required></td>
+										<td><input type="number" class="input-small" ng-model="markerLng" name="markerLng" required></td>
 										<td><button class="btn" ng-click="addMarker()" 
-											ng-disabled="angularGoogleMapsForm.markerLat.$invalid || angularGoogleMapsForm.markerLng.$invalid">Add <i class="icon icon-plus-sign"></i></button></td>
+											ng-disabled="angularGoogleMapsForm.marker.latitude.$invalid || angularGoogleMapsForm.marker.longtitude.$invalid">Add <i class="icon icon-plus-sign"></i></button></td>
 									</tr>
 								</tfoot>
 							</table>
